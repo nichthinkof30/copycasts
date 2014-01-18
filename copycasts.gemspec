@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = "CopyCasts"
+  s.name        = "copycasts"
   s.version     = "0.0.1"
   s.authors     = ["Nicholas Ng"]
   s.email       = ["secret@live.com.my"]
@@ -7,7 +7,8 @@ Gem::Specification.new do |s|
   s.summary     = %q{CopyCat}
   s.description = %q{Stealing videos}
   
-  s.add_development_dependency "nokogiri"
+  s.add_development_dependency "nokogiri", "~> 1.5", ">= 1.5.6"
+  s.add_development_dependency "open-uri", "~> 1.5", ">= 1.5.6"
   s.files = [
     "lib/copycasts.rb"
   ]
