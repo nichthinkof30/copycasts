@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'Copycasts'
+
+copycast_obj = CopyCasts::Crawling.new
+copycast_obj.download_videos
