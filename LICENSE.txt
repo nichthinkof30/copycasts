@@ -1,4 +1,4 @@
-Copyright (c) 2014 Nicholas
+Copyright (c) 2014 Nicholas Ng
 
 MIT License
 

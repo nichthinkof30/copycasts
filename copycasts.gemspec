@@ -21,4 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "nokogiri", "~> 1.5", ">= 1.5.6"
   spec.add_development_dependency "open-uri", "~> 1.5", ">= 1.5.6"
+  spec.add_development_dependency "progressbar", "~> 0.21.0"
 end
