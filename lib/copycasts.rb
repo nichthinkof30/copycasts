@@ -1,4 +1,6 @@
-require "copycasts/version"
+require 'nokogiri'
+require 'open-uri'
+require 'net/http'
 
 module Copycasts
   
@@ -12,8 +14,9 @@ module Copycasts
 
     def get_links
       casts_list = []
-      puts "Crawling casts list..."
+      puts "Start crawling..."
       for index in 1..@pages
+        puts "Page :#{index}"
         target_page = Nokogiri::HTML(open(TARGET_URL + "/?type=free&page=#{index}"))
         target_page.css('.watch a:first').each do |link|
           link_without_autoplay = link['href'].to_s.sub('?autoplay=true','')
@@ -37,7 +40,7 @@ module Copycasts
       ret
     end
 
-    def file_links
+    def mp4_video_links
       mp4_links = []
       get_links.each do |video_link|
         video_page = Nokogiri::HTML(open(TARGET_URL + "/" + video_link))

@@ -1,9 +1,10 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/copycasts/version', __FILE__)
+lib = File.expand_path File.join(File.dirname(__FILE__), 'lib')
+$:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "copycasts"
-  spec.version       = Copycasts::VERSION
+  spec.version       = File.read('VERSION').strip
   spec.authors       = ["Nicholas"]
   spec.email         = ["secret@live.com.my"]
   spec.description   = %q{Offline watch free episode of railscast videos for personal usage.}

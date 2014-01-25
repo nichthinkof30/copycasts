@@ -1,6 +1,6 @@
 # Copycasts
 
-TODO: Write a gem description
+Crawling railcast video and download to your local
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run using this command in your terminal:
+
+    copycasts-start-crawl
 
 ## Contributing
 
