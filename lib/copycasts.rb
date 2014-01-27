@@ -16,7 +16,7 @@ module Copycasts
       casts_list = []
       puts "Start crawling page "
 
-      for index in 1..2
+      for index in 1..@pages
         print "#{index}"
         print ", " if index != @pages
         target_page = Nokogiri::HTML(open(TARGET_URL + "/?type=free&page=#{index}"))

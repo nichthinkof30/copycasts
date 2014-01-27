@@ -8,6 +8,12 @@ Install it the gem globally as:
 
     $ gem install copycasts
 
+## Gem dependency
+
+    $ gem install nokogiri
+    $ gem install open-uri
+    $ gem install progressbar
+    
 ## Usage
 
 Run using this command in your terminal:
